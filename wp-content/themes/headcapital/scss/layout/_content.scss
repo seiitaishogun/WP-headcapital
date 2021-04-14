@@ -1,0 +1,12 @@
+.body {
+  .main {
+    min-height: calc(100vh - 300px);
+    &__content {
+      margin-top: $header-mobile-height;
+      @media screen and (min-width: 1200px) {
+        margin-top: 90px;
+        min-height: calc(100vh - 425px);
+      }
+    }
+  }
+}

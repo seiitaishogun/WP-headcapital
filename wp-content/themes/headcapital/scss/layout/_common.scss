@@ -1,0 +1,79 @@
+.circle-ic {
+  border-radius: 50%;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  background-color: $primary-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.md {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    svg {
+      width: 14px;
+      height: auto;
+    }
+  }
+  &.lg {
+    width: 92px;
+    height: 92px;
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}

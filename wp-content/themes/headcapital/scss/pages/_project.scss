@@ -1,0 +1,289 @@
+.body {
+  .main {
+    &__content {
+      .project {
+        &__summary {
+          background-color: #ffffff;
+          text-align: center;
+          margin-bottom: 24px;
+          padding-bottom: 24px;
+          padding-top: 40px;
+          &-header {
+            &::before {
+              content: "";
+              display: block;
+              height: 2px;
+              width: 60px;
+              background-color: $primary-light;
+              margin-bottom: 32px;
+              margin-left: auto;
+              margin-right: auto;
+              @media screen and (min-width: $xl) {
+                width: 90px;
+                height: 3px;
+                margin-bottom: 40px;
+              }
+            }
+          }
+          &-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 32px;
+            @media screen and (min-width: $xl) {
+              width: 204px;
+              margin-bottom: 24px;
+            }
+          }
+          &-title {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 24px;
+            font-family: $primary-font;
+            letter-spacing: -0.291667px;
+            margin-left: auto;
+            margin-right: auto;
+            &.ola {
+              max-width: 500px;
+            }
+            &.tgs {
+              max-width: 604px;
+            }
+            &.hit {
+              max-width: 525px;
+            }
+            @media screen and (min-width: $xl) {
+              font-size: 36px;
+              line-height: 56px;
+              letter-spacing: -0.375px;
+              margin-bottom: 32px;
+            }
+          }
+          &-content {
+            margin-bottom: 32px;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justify;
+            color: #323232;
+            max-width: 765px;
+            margin-left: auto;
+            margin-right: auto;
+            @media screen and (min-width: $xl) {
+              font-size: 16px;
+              line-height: 26px;
+              margin-bottom: 40px;
+              text-align: center;
+            }
+          }
+          &-products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            > a {
+              margin-bottom: 24px;
+              font-weight: 500;
+              color: #2c2e30;
+              &:last-of-type {
+                text-align: center;
+                width: 100%;
+                @media screen and (min-width: $xl) {
+                  width: auto;
+                  margin-left: 16px;
+                }
+              }
+            }
+          }
+          &-banner {
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            @media screen and (min-width: $xl) {
+              margin-bottom: 80px;
+              margin-top: 20px;
+            }
+          }
+        }
+        &__desc {
+          background-color: #fbfaf6;
+          padding-bottom: 16px;
+          padding-top: 62px;
+          .row {
+            @media screen and (min-width: $xl) {
+              justify-content: space-evenly;
+            }
+          }
+          &-title {
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -0.291667px;
+            @media screen and (min-width: $xl) {
+              font-size: 42px;
+              line-height: 56px;
+              letter-spacing: -0.4375px;
+            }
+          }
+          &-content {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justify;
+            margin-bottom: 32px;
+            @media screen and (min-width: $xl) {
+              margin-top: 50px;
+              max-width: 443px;
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+          &-item {
+            text-align: center;
+            margin-bottom: 40px;
+            &-ic {
+              margin-bottom: 14px;
+              border-radius: 50%;
+              width: 64px;
+              height: 64px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: auto;
+              margin-right: auto;
+              &.ora {
+                background-color: #fff2d8;
+              }
+              &.blu {
+                background-color: #e5f1ff;
+              }
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              @media screen and (min-width: 1200px) {
+                width: 92px;
+                height: 92px;
+                img {
+                  width: 43px;
+                  height: 43px;
+                }
+              }
+            }
+            &-content {
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 19px;
+              color: #323232;
+              @media screen and (min-width: 1200px) {
+                font-size: 24px;
+                line-height: 28px;
+              }
+            }
+            @media screen and (min-width: $xl) {
+              text-align: left;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-bottom: 70px;
+              padding-bottom: 32px;
+              .project__desc-item-ic {
+                margin: 0 32px 0 0;
+              }
+            }
+          }
+        }
+        &__features {
+          padding-top: 40px;
+          padding-bottom: 50px;
+          @media screen and (min-width: $xl) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+          }
+          &-col {
+            @media screen and (min-width: $xl) {
+              margin-top: 60px;
+              padding-left: 48px;
+            }
+          }
+          &-banner {
+            width: 100%;
+          }
+          &-title {
+            margin-bottom: 10px;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -0.291667px;
+            @media screen and (min-width: $xl) {
+              font-size: 42px;
+              line-height: 56px;
+              letter-spacing: -0.4375px;
+              margin-bottom: 24px;
+            }
+          }
+          &-content {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 24px;
+            @media screen and (min-width: $xl) {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+          &-list {
+            margin-bottom: 32px;
+            > li {
+              display: flex;
+              align-items: flex-start;
+              margin-bottom: 16px;
+              @media screen and (min-width: $xl) {
+                margin-bottom: 24px;
+              }
+            }
+            img {
+              margin-right: 12px;
+            }
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            @media screen and (min-width: $xl) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+        &__partners {
+          padding-bottom: 50px;
+          @media screen and (min-width: $xl) {
+            padding-bottom: 120px;
+          }
+          &-title {
+            margin-bottom: 32px;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -0.291667px;
+            @media screen and (min-width: $xl) {
+              margin-bottom: 48px;
+              font-size: 42px;
+              line-height: 56px;
+              letter-spacing: -0.4375px;
+            }
+          }
+          &-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            img {
+              margin-bottom: 16px;
+              margin-left: 8px;
+              margin-right: 8px;
+              @media screen and (min-width: $xl) {
+                margin-left: 16px;
+                margin-right: 16px;
+                margin-bottom: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

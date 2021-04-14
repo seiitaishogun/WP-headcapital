@@ -1,0 +1,110 @@
+html[dir="rtl"] {
+  .body {
+    .main {
+      font-family: $arab-font !important;
+    }
+  }
+}
+.body {
+  .main {
+    font-family: $secondary-font;
+    font-weight: 300;
+    &__content {
+      .bold {
+        font-weight: bold;
+      }
+      a {
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      font-size: 14px;
+      @media screen and (min-width: $xl) {
+        font-size: $primary-text-size;
+      }
+      color: $primary;
+      background-color: #ffffff;
+      position: relative;
+      .section-content {
+        font-size: 14px;
+        line-height: 24px;
+        @media screen and (min-width: $xl) {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .section-title {
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-family: $primary-font;
+        font-size: 28px;
+        line-height: 36px;
+        &::before {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 60px;
+          background-color: $primary-light;
+          margin-bottom: 16px;
+          @media screen and (min-width: 1200px) {
+            width: 90px;
+            height: 3px;
+            margin-bottom: 32px;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: $title-size;
+          line-height: $title-lh;
+        }
+        &.center {
+          text-align: center;
+          &::before {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        &.center-mobile {
+          @media screen and (max-width: 1199px) {
+            text-align: center;
+            &::before {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+    .sidebar-backdrop {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: rgba(10, 25, 48, 0.8);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: none;
+      z-index: 250;
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  .gry-text {
+    color: $grey;
+  }
+  .pri-text {
+    color: $primary;
+  }
+  .ora-text {
+    color: $primary-light;
+  }
+}
+@import "./header";
+@import "./footer";
+@import "./content";
+@import "./menu";
+@import "./common";

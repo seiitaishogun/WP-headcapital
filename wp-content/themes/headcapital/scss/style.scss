@@ -1,0 +1,45 @@
+/*!--------------------------------------------------------------------------------
+
+    Theme Name: Frontend Seed 4
+    Version:    1.4.3
+    Author:     trungnghia112 <trungnghia112@gmail.com>
+
+-----------------------------------------------------------------------------------*/
+//  Bootstrap
+//  Fonts
+//  Global
+//  Third party
+//  Layout
+//  Content
+//---------------------------------------------------------------------------------*/
+//
+// =Constants
+// --------------------------------------------------
+//
+// =Fontawesome
+// --------------------------------------------------
+// =Third parties
+//
+// @import: '../third_party/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
+// =Fonts
+// --------------------------------------------------
+// =Global
+// --------------------------------------------------
+@import "general/font";
+@import "general/mixin";
+@import "general/setting";
+@import "general/variable";
+@import "general/animation";
+@import "custom-bootstrap";
+//
+// =Layout
+// --------------------------------------------------
+@import "layout/index";
+//
+// =Content
+// --------------------------------------------------
+@import "pages/home";
+@import "pages/project";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/404";

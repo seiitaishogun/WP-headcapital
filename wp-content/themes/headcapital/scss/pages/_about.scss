@@ -1,0 +1,287 @@
+.body {
+  .main {
+    &__content {
+      .about {
+        &__intro {
+          background-position: left center, right center;
+          background-repeat: no-repeat, no-repeat;
+          padding-top: 42px;
+          @media screen and (max-width: 1199px) {
+            background-image: none !important;
+          }
+          @media screen and (min-width: $xl) {
+            padding-top: 62px;
+            padding-bottom: 32px;
+          }
+          &-content {
+            max-width: 770px;
+            margin: 0 auto;
+            text-align: justify;
+          }
+        }
+        &__team {
+          width: 100%;
+          max-width: 1702px;
+          margin-left: auto;
+          margin-top: 32px;
+          padding: 0 16px;
+          margin-bottom: 24px;
+          @media screen and (min-width: $xl) {
+            padding: 0;
+            margin-bottom: 110px;
+          }
+          &-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -4px;
+            margin-right: -4px;
+            @media screen and (min-width: $xl) {
+              margin-left: 0;
+              margin-right: 0;
+            }
+            &-item {
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              padding: 0 4px;
+              @media screen and (min-width: $xl) {
+                padding: 0;
+                &:not(:first-of-type) {
+                  padding-left: 7px;
+                }
+                &:not(:last-of-type) {
+                  padding-right: 7px;
+                }
+              }
+              &:nth-of-type(1) {
+                width: 100%;
+              }
+              &:nth-of-type(2) {
+                width: 50%;
+              }
+              &:nth-of-type(3) {
+                width: 50%;
+              }
+              @media screen and (min-width: $xl) {
+                &:nth-of-type(1) {
+                  width: 60%;
+                }
+                &:nth-of-type(2) {
+                  width: 20%;
+                }
+                &:nth-of-type(3) {
+                  width: 20%;
+                }
+              }
+            }
+          }
+        }
+        &__statistic {
+          background-color: #fbfaf6;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          @media screen and (min-width: $xl) {
+            padding-top: 60px;
+            padding-bottom: 24px;
+          }
+          &-row {
+            @media screen and (min-width: $xl) {
+              display: flex;
+              justify-content: center;
+              align-items: start;
+            }
+            &-item {
+              text-align: center;
+              &:not(:last-of-type) {
+                margin-bottom: 32px;
+              }
+              &-ic {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 12px;
+                @media screen and (min-width: $xl) {
+                  height: 60px;
+                }
+              }
+              &-number {
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -0.18px;
+                color: #1c315c;
+                font-family: $inter-font;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (min-width: $xl) {
+                  font-size: 60px;
+                  line-height: 73px;
+                  letter-spacing: -0.3px;
+                }
+                &-prefix,
+                &-suffix {
+                  font-weight: 800;
+                  font-size: 24px;
+                  text-align: center;
+                  letter-spacing: -0.12px;
+                  @media screen and (min-width: $xl) {
+                    font-size: 30px;
+                    letter-spacing: -0.15px;
+                  }
+                }
+              }
+              &-name {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: -0.266667px;
+                @media screen and (min-width: $xl) {
+                  font-size: 18px;
+                  line-height: 21px;
+                  letter-spacing: -0.3px;
+                }
+              }
+              @media screen and (min-width: $xl) {
+                &:not(:last-of-type) {
+                  margin-right: 32px;
+                }
+                &:not(:first-of-type) {
+                  margin-left: 32px;
+                }
+              }
+            }
+          }
+        }
+        &__us {
+          padding-top: 32px;
+          padding-bottom: 32px;
+          @media screen and (min-width: $xl) {
+            padding-top: 100px;
+            padding-bottom: 130px;
+          }
+          &-title {
+            margin-bottom: 48px;
+            @media screen and (min-width: $xl) {
+              margin-bottom: 92px;
+            }
+          }
+          &-item {
+            text-align: center;
+            @media screen and (max-width: 1199px) {
+              &:not(:last-of-type) {
+                margin-bottom: 24px;
+              }
+            }
+            &-ic {
+              height: 74px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 12px;
+              @media screen and (min-width: $xl) {
+                height: 90px;
+                margin-bottom: 32px;
+              }
+            }
+            &-title {
+              font-family: $primary-font;
+              font-size: 18px;
+              line-height: 28px;
+              margin-bottom: 16px;
+            }
+            &-content {
+              line-height: 24px;
+            }
+            @media screen and (min-width: $xl) {
+              &-title {
+                font-size: 28px;
+                line-height: 28px;
+                margin-bottom: 24px;
+              }
+              &-content {
+                font-size: 16px;
+                line-height: 36px;
+              }
+            }
+          }
+        }
+        &__vision {
+          padding-bottom: 24px;
+          @media screen and (min-width: $xl) {
+            padding-bottom: 100px;
+          }
+          &-title {
+            margin-bottom: 32px;
+            @media screen and (min-width: $xl) {
+              margin-bottom: 40px;
+            }
+          }
+          &-tabs {
+            .nav-tabs {
+              border-bottom: 1px solid $line-color;
+            }
+            .nav {
+              justify-content: space-between;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              &-link {
+                font-size: 18px;
+                line-height: 36px;
+                letter-spacing: -0.1875px;
+                font-family: $primary-font;
+                white-space: nowrap;
+                padding: 0 0 20px 0;
+                &.active,
+                &:focus,
+                &:active {
+                  background-color: transparent;
+                  border-radius: 0;
+                  border: 0;
+                  border-bottom: 4px solid $primary-light;
+                  color: $primary-light;
+                }
+                &:hover {
+                  border-radius: 0;
+                  border: 0;
+                  color: $primary-light;
+                }
+                @media screen and (min-width: $xl) {
+                  font-size: 28px;
+                  line-height: 36px;
+                  padding: 0 24px 24px;
+                }
+              }
+            }
+            .tab-content {
+              .tab-pane {
+                padding-top: 24px;
+                &-row {
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin-left: -16px;
+                  margin-right: -16px;
+                }
+                @media screen and (min-width: $xl) {
+                  padding-top: 48px;
+                }
+              }
+            }
+            &-banner {
+              > img {
+                width: 100%;
+              }
+              margin-bottom: 24px;
+            }
+            &-content {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
