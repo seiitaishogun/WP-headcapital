@@ -1,0 +1,9 @@
+.main {
+  min-height: calc(100vh - 300px);
+  text-align: left;
+  &__content {
+    @media screen and (min-width: 1200px) {
+      min-height: calc(100vh - 425px);
+    }
+  }
+}

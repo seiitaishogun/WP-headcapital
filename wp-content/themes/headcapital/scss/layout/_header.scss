@@ -1,0 +1,140 @@
+.header {
+  font-family: $secondary-font;
+  font-size: $primary-text-size;
+  color: $primary;
+  background-color: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.130982);
+  height: $header-mobile-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+  transition: left 0.2s ease-out;
+  -moz-transition: left 0.2s ease-out;
+  -webkit-transition: left 0.2s ease-out;
+  -ms-transition: left 0.2s ease-out;
+  -o-transition: left 0.2s ease-out;
+  &__ref {
+    background-color: $secondary-light;
+    padding: 4px 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    > div {
+      &:first-of-type {
+        margin-right: 12px;
+        > span {
+          font-size: 14px;
+        }
+        > p {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &__divider {
+    width: 0.5px;
+    background-color: $line-color;
+    height: 32px;
+    margin: 0 16px;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &__search-mobile {
+    margin-right: 10px;
+    &-button {
+      &:focus,
+      &:hover {
+        background-color: transparent !important;
+      }
+      .ic {
+        svg {
+          width: 21px;
+          path {
+            stroke: $primary;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &__ref,
+    &__divider {
+      display: none;
+    }
+  }
+
+  .navbar {
+    height: 100%;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    .togglerSidebar {
+      .ic {
+        &.bar {
+          svg {
+            width: 32px;
+            height: 32px;
+            path {
+              stroke: $primary;
+            }
+          }
+        }
+      }
+    }
+    &-brand {
+      margin: 0;
+      padding: 0;
+      > img {
+        width: 96px;
+        @media screen and (min-width: $xl) {
+          width: 140px;
+        }
+      }
+    }
+    &-nav {
+      width: 100%;
+      &-list {
+        margin: 0 100px 0 auto;
+        &-item {
+          &:not(:first-of-type) {
+            padding-left: 24px;
+          }
+          &:not(:last-of-type) {
+            padding-right: 24px;
+          }
+          &-link {
+            &:hover,
+            &:focus {
+              color: $primary-light;
+              text-decoration: none;
+            }
+          }
+          &.active {
+            .navbar-nav-list-item-link {
+              color: $primary-light;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 90px;
+    left: 0;
+    background-color: #fff;
+    font-family: $secondary-font;
+    .navbar {
+      background-color: #fff;
+    }
+  }
+}

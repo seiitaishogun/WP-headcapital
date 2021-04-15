@@ -1,0 +1,154 @@
+.main {
+  &__content {
+    .cv {
+      padding-top: 32px;
+      padding-bottom: 40px;
+      background-color: #fbfaf6;
+      @media screen and (min-width: $xl) {
+        padding-bottom: 110px;
+      }
+      &__nav {
+        > a {
+          display: flex;
+          align-items: center;
+          .ic {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        @media screen and (min-width: $xl) {
+          margin-bottom: 40px;
+          > a {
+            font-size: 16px;
+            line-height: 19px;
+            .ic {
+              width: 36px;
+              height: 36px;
+            }
+          }
+        }
+      }
+      &__job-details {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding: 16px 0 0;
+        background: #ffffff;
+        box-shadow: 0px 63px 50px rgba(67, 67, 68, 0.0705882);
+        border-radius: 6px;
+        &-header {
+          text-align: center;
+          padding-bottom: 24px;
+          padding-left: 16px;
+          padding-right: 16px;
+          border-bottom: 1px solid $line-color;
+          &-title {
+            font-family: $primary-font;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -0.291667px;
+            margin-bottom: 10px;
+          }
+          &-date {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 18px;
+          }
+        }
+        &-body {
+          border-bottom: 1px dashed $line-color;
+          padding-top: 24px;
+          padding-bottom: 32px;
+          padding-left: 16px;
+          padding-right: 16px;
+          &-title {
+            font-size: 18px;
+            line-height: 21px;
+          }
+          &-list {
+            padding: 0;
+            padding-left: 16px;
+            &:not(:last-of-type) {
+              margin-bottom: 24px;
+            }
+            > li {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+        &-footer {
+          text-align: center;
+          padding-top: 32px;
+          padding-bottom: 40px;
+        }
+        @media screen and (min-width: $xl) {
+          max-width: 1024px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 62px 72px 46px;
+          &-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            padding-bottom: 64px;
+            &-title {
+              font-size: 42px;
+              line-height: 56px;
+              letter-spacing: -0.4375px;
+              margin-bottom: 16px;
+            }
+            &-date {
+              font-size: 16px;
+              line-height: 19px;
+            }
+          }
+          &-body {
+            &-title {
+              font-size: 24px;
+              line-height: 28px;
+              margin-bottom: 16px;
+            }
+            &-list {
+              > li {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: justify;
+              }
+            }
+          }
+          &-footer {
+            padding-top: 120px;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscribe-modal {
+  &__form {
+    padding: 16px 16px 32px;
+    background: #ffffff;
+    &-title {
+      font-family: $primary-font;
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: -0.291667px;
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: $xl) {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 48px 16px 66px;
+      &-title {
+        margin-bottom: 42px;
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: -0.4375px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.footer {
+  font-family: $secondary-font;
+  background-color: $primary-dark;
+  color: rgba($color: #fff, $alpha: 0.64);
+  a {
+    color: rgba($color: #fff, $alpha: 0.64);
+    &:hover,
+    &:active,
+    &:focus {
+      color: rgba($color: #fff, $alpha: 0.64);
+      text-decoration: none;
+    }
+  }
+  &-links {
+    padding-top: 18px;
+    &-logo {
+      margin-bottom: 32px;
+    }
+    &-title {
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $primary-font;
+      color: $primary-light;
+      margin-bottom: 12px;
+    }
+    &-contact {
+      display: flex;
+      font-size: 14px;
+      line-height: 22px;
+      .ic {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+      }
+    }
+    a {
+      font-size: 14px;
+      line-height: 39px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+    }
+  }
+  &-copyright {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-top: 1px solid #193672;
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
