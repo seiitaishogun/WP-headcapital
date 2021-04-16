@@ -37,6 +37,7 @@ get_header();
     <!-- End Page -->
     <!-- body scripts -->
 
+
     <script src="<?php echo get_theme_file_uri( 'vendor/jquery/jquery.min.js' ); ?>"></script>
     <script src="<?php echo get_theme_file_uri( 'vendor/bootstrap/js/bootstrap.bundle.min.js' ); ?>"></script>
 <?php //wp_enqueue_script( 'jquery', get_template_directory_uri() . '/vendor/jquery/jquery.min.js', array ( 'jquery' ), 1.1, true); ?>
